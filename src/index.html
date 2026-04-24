@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="scripts.js"></script>
+    <link href="styles.css" rel="stylesheet">
     <title>Weather Cross</title>
 </head>
 
 <body>
-    <div id="container">
-        <button id="get-weather-btn" onclick="getWeather()">Get Weather</button>
+    <div class="container">
+        <button id="get-weather-fetch-btn" onclick="getWeatherFetch()">Get Weather via fetch</button>
+        <button id="get-weather-sync-btn" onclick="getWeatherSync()">Get Weather via sync</button>
+        <button id="get-weather-async-btn" onclick="getWeatherAsync()">Get Weather via async/await</button>
         <div id="weather-result"></div>
     </div>
 </body>
